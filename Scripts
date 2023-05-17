@@ -1,0 +1,29 @@
+using UnityEngine;
+using TMPro;
+
+public class RedButton : MonoBehaviour
+{
+
+public TextMeshPro questionBox;
+public string words = "";
+// Start is called before the first frame update
+void Start()
+{
+
+}
+
+// Update is called once per frame
+void Update()
+{
+
+}
+
+private void OnTriggerEnter(Collider other)
+{
+//if this is right, say good job. If this is wrong, say why
+if(other.tag == "Hands")
+{
+questionBox.SetText(words);
+}
+}
+}
