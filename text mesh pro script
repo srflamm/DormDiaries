@@ -1,0 +1,14 @@
+using UnityEngine;
+using TMPro;
+
+public class setQuestion : MonoBehaviour
+{
+public string questionHere;
+void Start()
+{
+TextMeshPro textmeshPro = GetComponent<TextMeshPro>();
+textmeshPro.SetText(questionHere, 4, 6.345f, 3.5f);
+// The text displayed will be:
+// The first number is 4 and the 2nd is 6.35 and the 3rd is 4.
+}
+}
